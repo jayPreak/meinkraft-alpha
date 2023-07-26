@@ -42,8 +42,8 @@ export function Player({ lerp = THREE.MathUtils.lerp }) {
       <RigidBody ref={ref} colliders={false} mass={1} type="dynamic" position={[0, 10, 0]} enabledRotations={[false, false, false]}>
         <CapsuleCollider args={[0.75, 0.5]} />
       </RigidBody>
-      <group ref={axe} onPointerMissed={(e) => (axe.current.children[0].rotation.x = -0.5)}>
-        <Axe position={[0.3, -0.35, 0.5]} />
+      <group ref={axe} onPointerMissed={(e) => (axe.current.children[0].rotation.x = -0.8)}>
+        <Axe position={[0.4, -0.2, 0.3]} />
       </group>
     </>
   )
