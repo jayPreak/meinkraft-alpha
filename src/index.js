@@ -10,11 +10,14 @@ function Overlay() {
       <App />
       <div className="dot" />
       <div className={`fullscreen bg ${ready ? "ready" : "notready"} ${ready && "clicked"}`}>
-        <div className="stack">
+        <div className="stack" style={{ fontFamily: "MyFont" }}>
           <button onClick={() => set(true)}>Start</button>
         </div>
         {/* <Foo wilter date="26. July" year="2023" /> */}
-        <footer class=" rounded-lg shadow  absolute bottom-0 w-full">
+        <h1 class="absolute top-10 text-9xl font-extrabold text-gray-900 " style={{ fontFamily: "MyFont" }}>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r to-[#a89e9d] from-[#5df54a]">Meinkraft - Alpha</span>
+        </h1>
+        <footer class=" rounded-lg shadow  absolute bottom-0 w-full" style={{ fontFamily: "MyFont" }}>
           <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <div class="sm:flex sm:items-center sm:justify-between">
               <a href="https://jayeshbhushan.me/" class="flex items-center mb-4 sm:mb-0">
@@ -23,22 +26,22 @@ function Overlay() {
               </a>
               <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
-                  <a href="#" class="mr-4 hover:underline md:mr-6 ">
+                  <a href="https://github.com/jayPreak" class="mr-4 hover:underline md:mr-6 ">
                     Github
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="mr-4 hover:underline md:mr-6">
+                  <a href="https://github.com/jayPreak" class="mr-4 hover:underline md:mr-6">
                     Twitter
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="mr-4 hover:underline md:mr-6 ">
+                  <a href="https://www.linkedin.com/in/jayesh-bhushan-587616200/" class="mr-4 hover:underline md:mr-6 ">
                     LinkedIn
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="hover:underline">
+                  <a href="mailto:jayesh.preak2003@gmail.com" class="hover:underline">
                     Email
                   </a>
                 </li>
